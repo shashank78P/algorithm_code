@@ -1,3 +1,4 @@
+//C program to implement depth first search
 #include<stdio.h>
 int queue[10],arr[10][10];
 int i,j,n,front=0,rare=-1,start;
@@ -14,7 +15,7 @@ void check(int start){
                             flag = 1;
                         }
                     }
-                    if(flag == 0){ //duplicate key is not present then proceed
+                    if(flag == 0){ //if duplicate key is not present then proceed
                         queue[++rare]=i;
                 }
           }
